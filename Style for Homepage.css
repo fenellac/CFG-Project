@@ -1,10 +1,53 @@
-h1 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
 
 header#main-header {
-  background: url(http://cdn.skim.gs/images/crdrmkflqhcchetrzcby/meals-in-a-mug) center center;
-  padding: 5%;
-  line-height: 1.2;
-  color: crimson;
-  position: relative;
-  z-index: 0;
+  background-image: url("meals-in-a-mug.jpg")
+}
+
+header#main-header::before {
+  background: white;
+  content: "";
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+header#main-header p.summary {
+  font-size: 30px;
+  text-shadow: 0 0 5px white;
+}
+
+#main-header h1 {
+  margin: 0;
+  font-size: 80px;
+  text-shadow: 0 0 10px white;
+  letter-spacing: -3px;
 }
