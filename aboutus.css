@@ -1,6 +1,25 @@
 body {
 	background-image: url("aboutbg.jpg");
+	div{
+ background: inherit;
+ width: 250px;
+ height: 350px;
+ position: absolute;
 }
+
+div:before{
+ content: “about.jpg”;
+ background: inherit; 
+ position: absolute;
+ left: 0;
+ right: 0;
+ top: 0; 
+ bottom: 0;
+ box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.3);
+ filter: blur(10px);
+}
+}
+
 
 .table-wrap{
 display:table;
