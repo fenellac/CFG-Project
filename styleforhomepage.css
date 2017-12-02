@@ -1,7 +1,7 @@
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0px 0px;
     overflow: hidden;
     background-color: #333;
 }
@@ -14,20 +14,48 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px 14px;
+    letter-spacing: 3px;
     text-decoration: none;
+    word-spacing: 8px;
 }
 
 li a:hover {
     background-color: #111;
 }
 
+li.dropdown {
+    display: inline-block;
+}
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 header#main-header {
   background-image: url("meals-in-a-mug.jpg");
+  background-size: 300px 100px
   margin:auto;
-  height:500px;
+  height:790px; ;
 }
 
 header#main-header::before {
@@ -42,15 +70,29 @@ header#main-header::before {
   z-index: -1;
 }
 
-header#main-header p.summary {
-  font-size: 30px;
-  text-shadow: 0 0 5px white;
-}
-
 #main-header h1 {
   margin: auto;
-  text-align: center;
-  font-size: 80px;
+  text-align: left;
+  padding: 12.5cm 5cm 0cm 3cm;
+  font-size: 85px;
+  font-family: Georgia;
   text-shadow: 0 0 10px white;
-  letter-spacing: -3px;
+  letter-spacing: 3px;
 }
+
+header#main-header p.summary {
+  font-size: 30px;
+  font-family: Georgia;
+  padding: 0cm 5cm 3cm 3.5cm;
+  text-shadow: 0 0 5px white;  
+}
+
+div#title {
+  text-align: center;
+  font-size: 25px;
+  font-family: Georgia;
+  margin: auto;
+  padding: 0.5cm 1cm 1cm 0cm ;
+}
+
+
