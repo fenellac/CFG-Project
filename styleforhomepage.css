@@ -55,7 +55,10 @@ header#main-header {
   background-image: url("meals-in-a-mug.jpg");
   background-size: 300px 100px
   margin:auto;
-  height:790px; ;
+  height:790px;
+  width:100%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 header#main-header::before {
@@ -71,28 +74,161 @@ header#main-header::before {
 }
 
 #main-header h1 {
+  padding: 12.5cm 5cm 0cm 3cm;
   margin: auto;
   text-align: left;
-  padding: 12.5cm 5cm 0cm 3cm;
   font-size: 85px;
   font-family: Georgia;
   text-shadow: 0 0 10px white;
   letter-spacing: 3px;
+  position:relative;
+  width:100%
 }
 
 header#main-header p.summary {
   font-size: 30px;
   font-family: Georgia;
   padding: 0cm 5cm 3cm 3.5cm;
-  text-shadow: 0 0 5px white;  
+  text-shadow: 0 0 5px white;
+  position:relative
+  width:100%;
 }
 
 div#title {
+  width:1300px;
   text-align: center;
   font-size: 25px;
   font-family: Georgia;
   margin: auto;
-  padding: 0.5cm 1cm 1cm 0cm ;
+  padding: 1px 1px 1px 0px;
+  border-bottom: 2px solid gray;
+
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 320px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  font-family: Georgia
+  color: #FFFAF0;
+  font-size: 30px;
+  padding: 10px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+/* Clear floats after the columns */
+.recipes:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column h1 {
+  font-size: 30px;
+  font-family: Georgia;
+  text-align: center;
+} 
+
+.column h2 {
+  font-size: 16px;
+  font-family: Georgia;
+  text-align: center;
+
 }
 
 

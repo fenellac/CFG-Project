@@ -4,7 +4,43 @@
 
 <head>
 
-<link rel="stylesheet" href="styleforhomepage.css" type="text/css" />
+<link rel="stylesheet" href="freefromcss.css" type="text/css" />
 
-<title> Mug recipes </title>
+<title> Free From Recipes </title>
 </head>
+
+<body>
+
+<div id="carousel-a">  
+  <div class="project-pictures">  
+
+  <ol class="content">  
+  <li><img src="images/portfolio_img/design_museum/cropped/1.png">  
+  </li>  
+  </ol>  
+  <div class="buttons">  
+  <button class="prev">    
+  </button>
+  <button class="next">
+      <span class="offscreen">Next</span> ▶ 
+  </button>
+  </div>
+</div></div>
+
+<script>
+
+	carousel = function(id) {
+    var box = document.querySelector(id + ' .project-pictures');
+    var next = box.querySelector(id + ' .next');
+    var prev = box.querySelector(id + ' .prev');
+    var items = box.querySelectorAll(id + ' .content li');
+    // ...
+};
+
+carouselA = carousel('#carousel-a');
+carouselB = carousel('#carousel-b');
+
+</script>
+
+</body>
+</html>
