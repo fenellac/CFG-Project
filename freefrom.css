@@ -250,20 +250,21 @@ body {font-family: Georgia,sans-serif;margin:0}
 
 ul.recipenote {
     background-color: transparent;
-    font-size:16px;
+    font-size:17px;
     list-style-type: none;
     margin-bottom:10px;
 }
 
 ul.ingredients {
     background-color: transparent;
-    font-size:18px;
+    font-size:17px;
     list-style-type: square;
     line-height:25px;
+
 }
 
 .ingredient-box {
-    padding:5px 0px 0px 40px;
+    padding:2px 0px 0px 40px;
 }
 
 .ingredient-box h1 {
@@ -273,7 +274,7 @@ ul.ingredients {
 
 .instructions { 
     padding:5px 0px 20px 25px;
-    margin-right: 5px;
+    margin-right: 10px;
  }
 
 .instructions h1 {
@@ -284,8 +285,13 @@ ul.ingredients {
 ol {
     font-size:18px;    
     line-height:28px;
+    margin-right:22px;
 }
 
 #second {
     background-color:#FED7D7;
+}
+
+#third {
+    background-color:#ECDFFB;
 }
