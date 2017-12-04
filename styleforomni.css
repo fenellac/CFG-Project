@@ -202,7 +202,7 @@ li.dropdown {
 .row:after {
     content: "";
     display: table;
-    clear: both;
+    clear:;
 }
 
 /* Closable button inside the image */
@@ -212,8 +212,6 @@ li.dropdown {
     font-size: 35px;
     cursor: pointer;
 }
-
-
 
 /* Clear floats after rows */ 
 .row:after {
@@ -226,6 +224,9 @@ li.dropdown {
 .content {
     background-color: white;
     padding: 10px;
+    font: arial;
+    color: black;
+    font-size: "6"
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -241,5 +242,7 @@ li.dropdown {
         width: 100%;
     }
 }
-
+.p {
+    color: black;
+}
 
