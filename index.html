@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+<link rel="stylesheet" href="styleforhomepage.css" type="text/css" />
+
+
+<title> Mug Recipes </title>
+
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+	<nav>
+		<ul>
+		  <li><a class="home" href="index.html">Home</a></li>
+		  <li><a href="About Us.html">About Us</a></li>
+		  <li class="dropdown">
+		  	<a href="javascript:void(0)" class="dropbtn"> Recipes </a>
+		  	<div class="dropdown-content"> 
+		  		<a href="#">Omnivores</a>
+		  		<a href="#">Free From</a>
+		  		<a href="#"> Low Cal </a>
+            </div>
+           </li>
+           <li><a href="contactform.html"> Contact Us </a></li>
+        </ul>
+	</nav>
+
+<!-- Header  -->
+
+<header id="main-header">
+	<h1 class="title">Mug Meals</h1>
+	<p class="summary">For those lazy students such as ourselves... </p>
+</header>
+
+<!-- Title -->
+
+	<div id="title">
+		<h1> Our Recipes </h1>
+	</div>
+
+<!-- Recipes -->
+
+<div class="recipes">
+
+  <div class="column" id="omnivores"> 
+    <h1> Omnivores </h1>
+
+<div class="slideshow-container">
+  <div class="mySlides fade" id="omnivores">
+    <img src="omnivore1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade" id="omnivores">
+    <img src="omnivore2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade" id="omnivores">
+    <img src="omnivore3.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" id="1" onclick="currentSlide1(1)"></span> 
+  <span class="dot" id="1" onclick="currentSlide1(2)"></span> 
+  <span class="dot" id="1" onclick="currentSlide1(3)"></span> 
+</div>
+
+
+    <h2> Classic recipes for those who are happy to indulge in whatever they please whether it's copious amounts of melted cheese or to statisfy a sweet tooth </h2>
+
+  </div>
+ 
+
+  <div class="column" id="freefrom">
+    <h1> Free From... </h1>
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="ff1.jpg" style="width:100%">
+    <div class="text"> ... </div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="" style="width:100%">
+    <div class="text"> ... </div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="" style="width:100%">
+    <div class="text"> ... </div>
+  </div>
+
+  <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide2(1)"></span> 
+  <span class="dot" onclick="currentSlide2(2)"></span> 
+  <span class="dot" onclick="currentSlide2(3)"></span> 
+</div>
+
+
+	<h2> Unique delicious recipes that are gluten, egg, dairy, sugar and even nut free!! </h2>
+  </div>
+
+
+
+  <div class="column" id="lowcal">
+  	 <h1> Low Cal </h1>
+
+  	 <div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="" style="width:100%">
+    <div class="text"> Omnivores </div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+	 <h2> For those looking for lighter options, we have recipes to suit your healthy lifestyle </h2>
+	</div>
+</div>
+
+	 
+
+
+
+
+<script>
+
+var slideIndex = 1;
+showSlides1(slideIndex);
+
+function plusSlides1(n) {
+  showSlides1(slideIndex += n);
+}
+
+function currentSlide1(n) {
+  showSlides1(slideIndex = n);
+}
+
+function showSlides1(n) {
+  var i;
+  var slides = document.getElementByID("omnivores");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+
+var slideIndex = 1;
+showSlides2(slideIndex);
+
+function plusSlides1(n) {
+  showSlides2(slideIndex += n);
+}
+
+function currentSlide1(n) {
+  showSlides2(slideIndex = n);
+}
+
+function showSlides2(n) {
+  var i;
+  var slides = document.getElementsByID("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+
+</script>
+
+</body>
+
+</html>
+
+
+
