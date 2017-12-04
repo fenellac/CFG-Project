@@ -52,8 +52,7 @@ li.dropdown {
 }
 
 header#main-header {
-  background-image: url("meals-in-a-mug.jpg");
-  background-size: 300px 100px
+  background-image: url("meals-in-a-mug.jpg");  
   margin:auto;
   height:790px;
   width:100%;
@@ -77,25 +76,25 @@ header#main-header::before {
   padding: 12.5cm 5cm 0cm 3cm;
   margin: auto;
   text-align: left;
-  font-size: 85px;
+  font-size: 5vw;
   font-family: Georgia;
   text-shadow: 0 0 10px white;
   letter-spacing: 3px;
   position:relative;
-  width:100%
+  width:100%;
 }
 
 header#main-header p.summary {
-  font-size: 30px;
+  font-size: 2vw;
   font-family: Georgia;
   padding: 0cm 5cm 3cm 3.5cm;
   text-shadow: 0 0 5px white;
-  position:relative
+  position:relative;
   width:100%;
 }
 
 div#title {
-  width:1300px;
+  width:100%;
   text-align: center;
   font-size: 25px;
   font-family: Georgia;
@@ -196,7 +195,6 @@ div#title {
 }
 
 
-
 * {
     box-sizing: border-box;
 }
@@ -211,7 +209,6 @@ body {
     padding: 15px;
 }
 
-/* Clear floats after the columns */
 .recipes:after {
     content: "";
     display: table;
@@ -229,6 +226,26 @@ body {
   font-family: Georgia;
   text-align: center;
 
+}
+
+
+.newsletter {
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    padding: 2px;
+    margin: auto;
+    width:650px;
+    text-align: center;  
+    font-family:georgia;
+}
+
+.newsletter h1 {
+  font-size:25px;  
+}
+
+.newsletter p {
+  font-size:15px;
+  word-spacing: 2px;
 }
 
 
