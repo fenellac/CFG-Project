@@ -4,43 +4,127 @@
 
 <head>
 
-<link rel="stylesheet" href="freefromcss.css" type="text/css" />
+<link rel="stylesheet" href="freefrom.css" type="text/css">
 
 <title> Free From Recipes </title>
 </head>
 
 <body>
 
-<div id="carousel-a">  
-  <div class="project-pictures">  
+<!-- Navigation Bar -->
+	<nav>
+		<ul>
+		  <li><a class="home" href="homepage.html">Home</a></li>
+		  <li><a href="About Us.html">About Us</a></li>
+		  <li class="dropdown">
+		  	<a href="javascript:void(0)" class="dropbtn"> Recipes </a>
+		  	<div class="dropdown-content"> 
+		  		<a href="#">Omnivores</a>
+		  		<a href="freefrom.html">Free From</a>
+		  		<a href="#"> Low Cal </a>
+            </div>
+           </li>
+           <li><a href="contactform.html"> Contact Us </a></li>
+        </ul>
+	</nav>
 
-  <ol class="content">  
-  <li><img src="images/portfolio_img/design_museum/cropped/1.png">  
-  </li>  
-  </ol>  
-  <div class="buttons">  
-  <button class="prev">    
-  </button>
-  <button class="next">
-      <span class="offscreen">Next</span> ▶ 
-  </button>
-  </div>
-</div></div>
+
+<!-- header -->
+<header class="head">
+	<h1> Free From Recipes </h1>
+	<p> If you are looking for mug meal recipes that are either gluten, dairy or ... free, then you've come to the right place </p>
+</header>
+
+
+<!-- carousel -->
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="freefrom.jpg" style="width:100%">
+  <div class="text">Microwave Peanut Butter & Banana Mug Cake </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img_fjords_wide.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img_mountains_wide.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<!-- first recipe --> 
+
+<div class="first">
+  <h2>Microwave Peanut Butter & Banana Mug Cake</h2>
+  <h3> This gluten-free mug cake packed with protein that's made with only all-nautral ingredients gives you the perfect energy boost throughout the day especially after a work out. It's ideal as you can mix it up the night before and have it microwaved fresh in the morning or whenever you feeling peckish...</h3>
+
+</div>
+
+<div class="row">
+  <div class="column side" style="background-color:#aaa;">Column</div>
+  <div class="column middle" style="background-color:#bbb;">Column</div>
+  <div class="column side" style="background-color:#ccc;">Column</div>
+</div>
+
+
+
+
 
 <script>
 
-	carousel = function(id) {
-    var box = document.querySelector(id + ' .project-pictures');
-    var next = box.querySelector(id + ' .next');
-    var prev = box.querySelector(id + ' .prev');
-    var items = box.querySelectorAll(id + ' .content li');
-    // ...
-};
+	var slideIndex = 1;
+showSlides(slideIndex);
 
-carouselA = carousel('#carousel-a');
-carouselB = carousel('#carousel-b');
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
 </script>
+
+
+
+
+
+
+
+
 
 </body>
 </html>
