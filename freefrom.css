@@ -1,7 +1,7 @@
 * {box-sizing:border-box}
 
 /* Nav */
-ul {
+nav ul.nav {
     list-style-type: none;
     margin: 0;
     padding: 0px 0px;
@@ -9,11 +9,11 @@ ul {
     background-color: #333;
 }
 
-li {
+nav li {
     float: left;
 }
 
-li a {
+nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -25,15 +25,15 @@ li a {
     font-family:Georgia;
 }
 
-li a:hover {
+nav li a:hover {
     background-color: #111;
 }
 
-li.dropdown {
+nav li.dropdown {
     display: inline-block;
 }
 
-.dropdown-content {
+nav .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -42,7 +42,7 @@ li.dropdown {
     z-index: 1;
 }
 
-.dropdown-content a {
+nav .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -50,9 +50,9 @@ li.dropdown {
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+nav .dropdown-content a:hover {background-color: #f1f1f1}
 
-.dropdown:hover .dropdown-content {
+nav .dropdown:hover .dropdown-content {
     display: block;
 }
 
@@ -98,7 +98,7 @@ body {font-family: Georgia,sans-serif;margin:0}
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -113,19 +113,20 @@ body {font-family: Georgia,sans-serif;margin:0}
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: white;
 }
 
 /* Caption text */
 .text {
   color: black;
-  font-size: 33px;
+  font-size: 28px;
   padding: 8px 15px;
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   width: 100%;
   text-align: center;
   font-family:Georgia;
+  text-shadow: 0 0 10px white;
 
 }
 
@@ -178,67 +179,113 @@ body {font-family: Georgia,sans-serif;margin:0}
 }
 
 
-/* recipe 1 */
-body {
-    margin: 15px;
+
+
+/* recipes */
+
+.listrecipes {
+    margin:30px;
+    border-radius: 10px;
 }
 
-/* Style the header */
+#first {
+    background-color:#fffae6;
+}
+
 .recipe {
-    background-color: #f1f1f1;
-    padding: 10px;
     text-align: center;
     margin-top: 30px;
     font-family:Georgia;
 }
 
 .recipe h2 {
+    padding:30px 10px 3px 10px;
     font-size:30px;
 }
 
 .recipe p {
-    font-size:15px;
-    line-height:20px;
-    padding:3px 10px;
+    font-size:19px;
+    line-height:25px;
+    padding:10px 15px;
 }
 
 /* Create three unequal columns that floats next to each other */
 .column {
     float: left;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+    padding: 0px;
 }
 
 /* Left and right column */
 .column.left {
-    width: 15%;
+    width: 25%;
+    border-bottom-left-radius: 10px
 }
 
 .column.middle {
-    width: 50%;
+    width: 25%;
+    
 }
 
 .column.right {
-    width: 35% ;
+    width: 50% ;    
+    border-bottom-right-radius: 10px
 }
-/* Clear floats after the columns */
+
 .row:after {
     content: "";
-    display: table;
+    display: grid;
     clear: both;
 }
 
-/* Style the footer */
-.footer {
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
     .column.side, .column.middle {
         width: 100%;
     }
 }
 
+.recipeinfo {
+    padding:10px;
+    text-align: left;
+}
+
+ul.recipenote {
+    background-color: transparent;
+    font-size:16px;
+    list-style-type: none;
+    margin-bottom:10px;
+}
+
+ul.ingredients {
+    background-color: transparent;
+    font-size:18px;
+    list-style-type: square;
+    line-height:25px;
+}
+
+.ingredient-box {
+    padding:5px 0px 0px 40px;
+}
+
+.ingredient-box h1 {
+    font-size:25px;
+    line-height:20px;
+}
+
+.instructions { 
+    padding:5px 0px 20px 25px;
+    margin-right: 5px;
+ }
+
+.instructions h1 {
+    font-size:25px;
+    line-height:20px;
+}
+
+ol {
+    font-size:18px;    
+    line-height:28px;
+}
+
+#second {
+    background-color:#FED7D7;
+}
