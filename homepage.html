@@ -53,67 +53,17 @@
   <div class="column" id="omnivores"> 
     <h1> Omnivores </h1>
 
-<div class="slideshow-container">
-  <div class="mySlides fade" id="omnivores">
-    <img src="omnivore1.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides fade" id="omnivores">
-    <img src="omnivore2.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides fade" id="omnivores">
-    <img src="omnivore3.jpg" style="width:100%">
-  </div>
-
-  <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides1(1)">&#10095;</a>
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" id="1" onclick="currentSlide1(1)"></span> 
-  <span class="dot" id="1" onclick="currentSlide1(2)"></span> 
-  <span class="dot" id="1" onclick="currentSlide1(3)"></span> 
-</div>
-
+    <img src="omnivore1.jpg" style="width:100%;height:450px;border-radius: 50%">
 
     <h2> Classic recipes for those who are happy to indulge in whatever they please whether it's copious amounts of melted cheese or to statisfy a sweet tooth </h2>
 
   </div>
  
-
   <div class="column" id="freefrom">
     <h1> Free From... </h1>
 
-<div class="slideshow-container">
-  <div class="mySlides fade">
-    <img src="ff1.jpg" style="width:100%">
-    <div class="text"> ... </div>
-  </div>
-
-  <div class="mySlides fade">
-    <img src="" style="width:100%">
-    <div class="text"> ... </div>
-  </div>
-
-  <div class="mySlides fade">
-    <img src="" style="width:100%">
-    <div class="text"> ... </div>
-  </div>
-
-  <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides2(1)">&#10095;</a>
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide2(1)"></span> 
-  <span class="dot" onclick="currentSlide2(2)"></span> 
-  <span class="dot" onclick="currentSlide2(3)"></span> 
-</div>
-
-
+    <img src="freefrompic.jpg" style="width:100%;height:450px;border-radius: 50%">
+   
 	<h2> Unique delicious recipes that are gluten, egg, dairy, sugar and even nut free!! </h2>
   </div>
 
@@ -167,72 +117,7 @@
                     <input type="submit" value="Subscribe Now!" class="btn btn-large" />
               </form>
 </div>
- 
 
-	 
-
-
-
-
-<script>
-
-var slideIndex = 1;
-showSlides1(slideIndex);
-
-function plusSlides1(n) {
-  showSlides1(slideIndex += n);
-}
-
-function currentSlide1(n) {
-  showSlides1(slideIndex = n);
-}
-
-function showSlides1(n) {
-  var i;
-  var slides = document.getElementByID("omnivores");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
-}
-
-
-var slideIndex = 1;
-showSlides2(slideIndex);
-
-function plusSlides1(n) {
-  showSlides2(slideIndex += n);
-}
-
-function currentSlide1(n) {
-  showSlides2(slideIndex = n);
-}
-
-function showSlides2(n) {
-  var i;
-  var slides = document.getElementsByID("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
-}
-
-
-</script>
 
 </body>
 
