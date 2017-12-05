@@ -60,33 +60,29 @@ li.dropdown {
 }
 
 h1, h2, h3 {
-   color: #36C;
+   color: white;
+   text-shadow: 1px 1px 2px black, 0 0 55px black, 5px black;
    font-weight: normal;
    letter-spacing: .4em;
    margin-bottom: 1em;
    text-transform: uppercase;
 }
 
-.column h4, h4, h4 
-{
-	font-size: 20px;
-  font-family: Georgia;
-  text-align: center;
-  color: #473653;
+;
 } 
 
 p {
-            color: white;
-            text-shadow: 1px 1px 2px black, 0 0 25px blue, 5px pink;
+            color: black;
+            text-shadow: 1px 1px 2px black, 0 0 25px white, 5px white;
          }
 h4 {
    color: white;
-            text-shadow: 1px 1px 2px black, 0 0 25px purple, 0 0 5px pink;
+            text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
         
 }
 
 p {
-           text-shadow: 0 0 2px #FF0000, 0 0 2px #0000FF;
+           text-shadow: 0 0 2px white, 0 0 2px white;
 
 
          }
@@ -191,3 +187,5 @@ p {
     text-decoration: none;
     border-radius: 50%;
 }
+
+
