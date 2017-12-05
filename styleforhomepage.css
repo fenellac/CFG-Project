@@ -142,12 +142,12 @@ body {
 
 .newsletter {
     border-radius: 10px;
-    background-color: #FFDEAD;
-    padding: 2px;
-    margin: auto;
-    width:650px;
+    background-color: #FEF2DC;
+    padding: 5px;
+    width:100%;
     text-align: center;  
     font-family:georgia;
+    border-top:2px solid gray;
 }
 
 .newsletter h1 {
@@ -155,7 +155,7 @@ body {
 }
 
 .newsletter p {
-  font-size:15px;
+  font-size:20px;
   word-spacing: 2px;
 }
 
