@@ -28,7 +28,7 @@ input[type=submit]:hover {
 
 .container {
     border-radius: 5px;
-    background-color: #FAEBD7;
+    background-color: #F5FCFE;
     padding: 10px;
     margin: auto;
     width:100%;
@@ -39,7 +39,7 @@ input[type=submit]:hover {
 .column {
     padding: 0px;
     height: 240px;
-    background-image: url(bgcontact.jpg);
+    background-color: white;
     opacity:1;
 }
 
